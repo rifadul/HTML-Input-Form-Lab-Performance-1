@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Performance 1</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #d5d5d5;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .container h3 {
+            padding-left: 50px;
+        }
+
+        .table {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        td {
+            width: 80%;
+        }
+
+        #select {
+            float: right;
+            padding: 3px 35px;
+        }
+
+        #clear {
+            float: left;
+            padding: 3px 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3><u>The complete Registration form with perfect JavaScript Validation</u></h3>
+        <div class="table">
+            <form>
+                <table width="100%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td>Enter Your Name</td>
+                        <td class="semicol">:</td>
+                        <td><input type="text" name="name" id="" maxlength="20" minlength="3" size="30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Mail-Id</td>
+                        <td class="semicol">:</td>
+                        <td><input type="email" name="email" id="email" size="30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Choose Your Gender</td>
+                        <td class="semicol">:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male" checked="checked">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Create your Password</td>
+                        <td class="semicol">:</td>
+                        <td> <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                size="30"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Comfirm Your Password</td>
+                        <td class="semicol">:</td>
+                        <td> <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                size="30"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No</td>
+                        <td class="semicol">:</td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" size="30"
+                                title="Must contain 11 degit Phone Number" required>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Choose Your Bob</td>
+                        <td class="semicol">:</td>
+                        <td><input type="date" name="dob" id="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td>Ender Your Address</td>
+                        <td class="semicol">:</td>
+                        <td><textarea name="massage" id="" cols="30" rows="3"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Choose Your Location</td>
+                        <td class="semicol">:</td>
+                        <td>
+                            <select name="location" id="location" required style="width: 60%;">
+                                <option value="select">Select</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="tangail">Tangail</option>
+                                <option value="khulna">Khulna</option>
+                                <option value="savar">Savar</option>
+                                <option value="bagura">Bagura</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit" id="select"></td>
+                        <td><input type="reset" name="reset" value="Clear" id="clear"></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <footer style="text-align:center;">
+        <p>© 2021 by <a href="https://www.facebook.com/siam.khushnobish" target="_blank">Siam Khushnobish </a></p>
+    </footer>
+</body>
+
+</html>
